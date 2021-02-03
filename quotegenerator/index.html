@@ -3,12 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <title>Quote Generator</title>
 </head>
 <body>
-  <h3>This is the quote generator project.</h3>
-  <p>
-    <a href="./../index.html">Home</a>
-  </p>
+  <div class="quote-container" id="quote-container">
+    <div class="quote-text">
+      <i class="fas fa-quote-left"></i>
+      <span id="quote">I am gifted, phenomenal, limitless, wealthy, destined for greatness!</span>
+    </div>
+    <div class="quote-author">
+      <span id="author">Ophy Boamah</span>
+    </div>
+    <div class="button-container">
+      <button class="twitter-button" id="twitter" title="Tweet This!">
+        <i class="fab fa-twitter"></i>
+      </button>
+      <button id="new-quote">New Quote</button>
+    </div>
+  </div>
+  <div class="loader" id="loader">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
